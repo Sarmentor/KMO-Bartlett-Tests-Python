@@ -12,6 +12,7 @@ Thus, the factor analysis is useful in estimation of common factors.
 With this in mind, the Bartlett Sphericity test can be used. The hypotheses are:
 
  H0: the matrix of population correlations is equal to the identity matrix
+ 
  H1: the matrix of population correlations is different from the identity matrix.
 
 
