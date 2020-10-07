@@ -90,7 +90,6 @@ def bartlett_sphericity(dataset, corr_method="pearson"):
     ddl = p * (p - 1) / 2
     #p-value
     pvalue = 1 - stats.chi2.cdf(chi2 , ddl)
-
     
     Result = collections.namedtuple("Bartlett_Sphericity_Test_Results", ["chi2", "ddl", "pvalue"], verbose=False, rename=False)   
     
