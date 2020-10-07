@@ -89,7 +89,7 @@ def bartlett_sphericity(dataset, corr_method="pearson"):
     #Freedom Degree
     ddl = p * (p - 1) / 2
     #p-value
-    pvalue = stats.chi2.pdf(chi2 , ddl)
+    pvalue = 1 - stats.chi2.cdf(chi2 , ddl)
     
     Result = collections.namedtuple("Bartlett_Sphericity_Test_Results", ["chi2", "ddl", "pvalue"], verbose=False, rename=False)   
     
